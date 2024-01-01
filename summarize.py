@@ -9,7 +9,6 @@ def summarize(job):
     text = job_input["text"]
 
     summary = summarizer(text, min_length=5, max_length=100)[0]["summary_text"]
-
     return summary
 
 
