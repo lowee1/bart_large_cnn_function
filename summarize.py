@@ -1,5 +1,8 @@
 from transformers import pipeline
 import runpod
+import torch
+
+print(torch.cuda.is_available(), flush=True)
 
 summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
 
