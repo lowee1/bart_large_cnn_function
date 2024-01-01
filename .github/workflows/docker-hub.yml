@@ -13,15 +13,6 @@ env:
   IMAGE_NAME: edwardlowe/bart_large_cnn_function
 
 jobs:
-
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build .
   push_to_registry:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
